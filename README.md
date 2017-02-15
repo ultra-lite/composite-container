@@ -7,6 +7,8 @@
 
 This is an extremely lightweight Composite Container for use with the Delegate Lookup pattern.  It is PSR-11 compliant.
 
+Use it with the [Ultra-Lite Container](https://github.com/ultra-lite/container) or any other Delegate Lookup containers.
+
 ## Use
 
 ```php
