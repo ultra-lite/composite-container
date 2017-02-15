@@ -52,4 +52,20 @@ class CompositeContainerSpec extends ObjectBehavior
 
         $this->shouldThrow(NotFoundExceptionInterface::class)->during('get', ['service-id']);
     }
+
+    function it_treats_the_first_container_as_higher_priority(
+        ContainerInterface $container1,
+        ContainerInterface $container2,
+        \stdClass $service1,
+        \stdClass $service2)
+    {
+        $container1->has('service-id')->willReturn(true);
+        $container2->has('service-id')->willReturn(true);
+
+        $container1->get('service-id')->willReturn($service1);
+        $container2->get('service-id')->willReturn($service2);
+
+        $this->get('service-id')->shouldBe($service1);
+        $this->get('service-id')->shouldNotBe($service2);
+    }
 }
