@@ -13,7 +13,7 @@ This is an extremely lightweight Composite Container for use with the Delegate L
 $compositeContainer = new \UltraLite\CompositeContainer\CompositeContainer();
 
 $compositeContainer->addContainer($container);
-$container->setCompositeContainer($compositeContainer); // or appropriate method on Delegate Lookup container
+$container->setDelegateContainer($compositeContainer); // or appropriate method on Delegate Lookup container
 
 if ($compositeContainer->has($serviceId) {
     $compositeContainer->get($serviceId);
