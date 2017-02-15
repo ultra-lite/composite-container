@@ -1,0 +1,14 @@
+language: php
+
+php:
+    - 7.0
+    - 7.1
+
+sudo: true
+
+install:
+    - composer self-update
+    - composer install
+
+script:
+    - ./vendor/bin/phpspec r -c tests/phpspec/phpspec.yml

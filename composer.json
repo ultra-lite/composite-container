@@ -1,0 +1,20 @@
+{
+    "name": "ultra-lite/composite-container",
+
+    "license": "MIT",
+
+    "require": {
+        "php": "^7.0",
+        "psr/container": "^1.0"
+    },
+
+    "require-dev": {
+        "phpspec/phpspec": "^3.2"
+    },
+
+    "autoload": {
+        "psr-0": {
+            "UltraLite\\CompositeContainer\\": "src/"
+        }
+    }
+}
