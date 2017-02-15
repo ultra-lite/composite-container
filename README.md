@@ -5,7 +5,7 @@
 
 # ![logo](https://avatars1.githubusercontent.com/u/16309098?v=3&s=100) Ultra-Lite Composite Container
 
-This is a Composite Container for use with the Delegate Lookup pattern.  It is PSR-11 compliant.
+This is an extremely lightweight Composite Container for use with the Delegate Lookup pattern.  It is PSR-11 compliant.
 
 ## Use
 
