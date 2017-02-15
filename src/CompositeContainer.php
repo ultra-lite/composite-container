@@ -2,6 +2,7 @@
 namespace UltraLite\CompositeContainer;
 
 use Psr\Container\ContainerInterface;
+use Psr\Container\NotFoundExceptionInterface;
 
 class CompositeContainer implements ContainerInterface
 {
@@ -14,7 +15,7 @@ class CompositeContainer implements ContainerInterface
     }
 
     /**
-     * @throws ServiceNotFound
+     * @throws NotFoundExceptionInterface
      *
      * @param string $serviceId
      * @return mixed
