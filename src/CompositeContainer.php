@@ -17,10 +17,9 @@ class CompositeContainer implements ContainerInterface
     /**
      * @throws NotFoundExceptionInterface
      *
-     * @param string $serviceId
      * @return mixed
      */
-    public function get($serviceId)
+    public function get(string $serviceId)
     {
         foreach ($this->containers as $container) {
             if ($container->has($serviceId)) {
@@ -31,10 +30,9 @@ class CompositeContainer implements ContainerInterface
     }
 
     /**
-     * @param string $serviceId
      * @return bool
      */
-    public function has($serviceId)
+    public function has(string $serviceId)
     {
         foreach ($this->containers as $container) {
             if ($container->has($serviceId)) {
